@@ -25,7 +25,40 @@ In java we have dedicated API to work with arrays.
         * `X` - primitive
 
 # project description
+We will provide tests for methods mentioned above.
+* check if a given object is an array
+    ```
+    Object ints = new int[]{1, 2, 3};
+    
+    assertTrue(ints.getClass().isArray());
+    ```
 
-## creating
+## creating / accessing
+* create
+    ```
+    String[] array = (String[]) Array.newInstance(String.class, 1);
+    
+    assertThat(array.length, is(1));
+    ```
+* set
+    ```
+    Object array = new String[]{"a"};
+    
+    Array.set(array, 0, "b");
+    
+    assertThat(((String[]) array)[0], is("b"));
+    ```
+* get
+    ```
+    Object array = new String[]{"a"};
+    
+    assertThat(Array.get(array, 0), is("a"));
+    ```
+* get length of an array
+    ```
+    Object array = new String[]{"a"};
+    
+    assertThat(Array.getLength(array), is(1));
+    ```
 
 ## expanding
