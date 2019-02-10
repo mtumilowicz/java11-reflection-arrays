@@ -34,11 +34,18 @@ We will provide tests for methods mentioned above.
     ```
 
 ## creating / accessing
-* create
+* create one dimension
     ```
     String[] array = (String[]) Array.newInstance(String.class, 1);
     
     assertThat(array.length, is(1));
+    ```
+* create two dimensions
+    ```
+    String[][] array = (String[][]) Array.newInstance(String.class, 1, 1);
+    
+    assertThat(array.length, is(1));
+    assertThat(array[0].length, is(1));
     ```
 * set
     ```
