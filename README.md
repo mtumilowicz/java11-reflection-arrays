@@ -32,8 +32,6 @@ We will provide tests for methods mentioned above.
     
     assertTrue(ints.getClass().isArray());
     ```
-
-## creating / accessing
 * create one dimension
     ```
     String[] array = (String[]) Array.newInstance(String.class, 1);
@@ -67,5 +65,3 @@ We will provide tests for methods mentioned above.
     
     assertThat(Array.getLength(array), is(1));
     ```
-
-## expanding
