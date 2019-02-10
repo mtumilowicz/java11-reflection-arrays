@@ -19,10 +19,18 @@ public class CreatingArrayTest {
     }
 
     @Test
-    public void create() {
+    public void create_oneDimension() {
         String[] array = (String[]) Array.newInstance(String.class, 1);
 
         assertThat(array.length, is(1));
+    }
+
+    @Test
+    public void create_twoDimensions() {
+        String[][] array = (String[][]) Array.newInstance(String.class, 1, 1);
+
+        assertThat(array.length, is(1));
+        assertThat(array[0].length, is(1));
     }
 
     @Test
