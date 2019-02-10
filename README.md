@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.com/mtumilowicz/java11-reflection-arrays.svg?branch=master)](https://travis-ci.com/mtumilowicz/java11-reflection-arrays)
+
 # java11-reflection-arrays
 
 # preview
